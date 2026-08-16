@@ -133,7 +133,8 @@ The job-safe Databricks notebook performs the complete operational workflow:
 8. Publish the score table and Top 25/30 views idempotently.
 9. Return a JSON result to the external orchestrator.
 
-The public notebook template is located at [`notebooks/retailco_customer_intelligence_production_job.py`](notebooks/retailco_customer_intelligence_production_job.py). Replace `YOUR_S3_BUCKET_NAME` before deployment.
+The public notebook template is located at [`notebooks/customer_intelligence_production_job.py`]
+(notebooks/customer_intelligence_production_job.py). Replace `YOUR_S3_BUCKET_NAME` before deployment.
 
 ### Published Unity Catalog objects
 
