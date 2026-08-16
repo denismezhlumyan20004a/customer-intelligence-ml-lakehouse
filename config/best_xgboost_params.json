@@ -1,0 +1,14 @@
+{
+    "n_estimators": 250,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "min_child_weight": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.0,
+    "scale_pos_weight": 1.0,
+    "name": "XGB_01",
+    "mean_auc_pr": 0.5155692507554617,
+    "mean_auc_roc": 0.638923302122225
+}

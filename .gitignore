@@ -1,0 +1,45 @@
+# Company data and customer-level outputs
+data/
+outputs/
+
+# Generated Spark/ML model artifacts
+models/
+*.crc
+_SUCCESS
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Credentials and local configuration
+.env
+*.env
+!.env.example
+*.pem
+*.key
+
+# Airflow runtime state
+airflow/logs/
+airflow/plugins/__pycache__/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Build and temporary files
+build/
+dist/
+*.egg-info/
+*.zip
+
+
+# Local Airflow runtime configuration and obsolete backups
+airflow/config/airflow.cfg
+airflow/*_before_*.py
