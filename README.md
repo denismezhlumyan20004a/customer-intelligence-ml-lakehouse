@@ -1,5 +1,7 @@
 # Customer Intelligence ML Lakehouse
 
+This portfolio project uses anonymized business identifiers. “RetailCo” is a fictional company name, and no confidential customer data or credentials are included.
+
 Production-oriented customer churn early-warning system built with AWS S3, Apache Spark, Databricks, MLflow, Unity Catalog and Apache Airflow.
 
 The system identifies currently active customers who are at risk of suffering a revenue decline of at least 30% during the following three months. It produces a complete customer risk table plus operational Top 25 and Top 30 retention lists.
