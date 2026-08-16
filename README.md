@@ -1,4 +1,4 @@
-# Customer Intelligence ML Lakehouse
+# Customer Churn ML Lakehouse
 
 This portfolio project uses anonymized business identifiers. “RetailCo” is a fictional company name, and no confidential customer data or credentials are included.
 
@@ -158,7 +158,7 @@ It runs at 06:00 Europe/Madrid on 11 February, May, August and November, after t
 ## Repository structure
 
 ```text
-customer-intelligence-ml-lakehouse/
+customer-churn-ml-lakehouse/
 ├── airflow/                 # Local Airflow environment and production DAG
 ├── config/                  # Model-search configuration
 ├── docs/                    # Architecture and repository guidance
