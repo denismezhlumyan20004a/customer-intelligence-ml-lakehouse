@@ -6,9 +6,7 @@ Production-oriented customer churn early-warning system built with AWS S3, Apach
 
 The system identifies currently active customers who are at risk of suffering a revenue decline of at least 30% during the following three months. It produces a complete customer risk table plus operational Top 25 and Top 30 retention lists.
 
-## Project status
-
-The churn workflow is implemented and validated end to end.
+In this project, churn risk is operationalised as a material forward-looking revenue contraction rather than confirmed account closure.
 
 | Capability | Status |
 | --- | --- |
@@ -23,7 +21,6 @@ The churn workflow is implemented and validated end to end.
 | Databricks production Job | Complete |
 | Airflow-to-Databricks orchestration | Complete |
 | Quarterly schedule | Complete |
-| CLV modelling | Not implemented |
 
 ## Validated production run
 
@@ -166,7 +163,6 @@ customer-intelligence-ml-lakehouse/
 ├── docs/                    # Architecture and repository guidance
 ├── notebooks/               # Databricks production notebook source
 ├── src/                     # Local Spark development and model experiments
-├── tests/                   # Automated tests to be expanded
 ├── Dockerfile.ml            # Local Spark/ML image
 └── README.md
 ```
@@ -232,14 +228,12 @@ build_silver.py
 
 Operational scoring is performed by the Databricks production notebook, not by manually chaining these development scripts.
 
-## Roadmap
+## Project status
 
-- Add Customer Lifetime Value modelling as a separate module.
-- Add automated unit and data-contract tests.
-- Add model/data drift monitoring and alerting.
-- Move local Airflow to a continuously available managed environment.
-- Add CI checks for Python compilation, DAG import and secret scanning.
+The churn early-warning pipeline has been validated end-to-end, from incremental data ingestion to quarterly production scoring orchestrated through Airflow.
 
-## CV-ready summary
+## Potential extensions
 
-Built an end-to-end churn early-warning lakehouse on AWS S3 and Databricks, including incremental Bronze/Silver/Gold pipelines, 43-feature temporal modelling, MLflow/Unity Catalog model governance, current-customer risk scoring and quarterly Airflow orchestration of a production Databricks Job.
+- Add automated unit, data-contract and CI checks.
+- Add model and data-drift monitoring with alerting.
+- Extend the platform with Customer Lifetime Value modelling as an independent module.
